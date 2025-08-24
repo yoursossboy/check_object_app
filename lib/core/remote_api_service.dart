@@ -196,8 +196,8 @@ class RemoteApiService {
     final privateKey = SSHKeyPair.fromPem(key);
 
     return SSHClient(
-      await SSHSocket.connect('89.169.150.177', 22),
-      username: 'polupanoff',
+      await SSHSocket.connect('ADRESS', 22),
+      username: 'USERNAME',
       identities: privateKey,
     );
   }
